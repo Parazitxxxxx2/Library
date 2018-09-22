@@ -14,7 +14,7 @@ class User:
 
         # ID.
         if not isinstance(user_id, str) and user_id != "" and \
-                3 < len(str(abs(user_id))) < 10:
+                3 < len(str(abs(user_id))) < 100:
             self._id = user_id
         else:
             raise Exception("!Delivered empty ID or bad ID")
